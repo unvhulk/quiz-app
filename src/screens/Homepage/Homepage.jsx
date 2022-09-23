@@ -35,7 +35,7 @@ export const Homepage = () => {
 					)}
 				</div>
 				<div className='Quiz-container'>
-					{categories?.map((category) => {
+					{categories.map((category) => {
 						return (
 							<div
 								key={category._id}
