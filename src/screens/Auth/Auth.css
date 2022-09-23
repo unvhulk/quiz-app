@@ -1,0 +1,67 @@
+.Auth-page {
+	display: grid;
+	grid-template-rows: 1fr 3fr 1fr;
+	grid-template-columns: 3fr 2fr 3fr;
+}
+.Auth-Quiz {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--Primary);
+	cursor: pointer;
+}
+.Auth-heading {
+	display: grid;
+	justify-self: center;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+.Auth-form {
+	grid-row: 2/3;
+	grid-column: 2/3;
+	display: grid;
+	align-items: center;
+	background-color: var(--Const-primary);
+	border: 1px solid black;
+	border-radius: 2rem;
+	padding: 1rem;
+}
+.Auth-label {
+	color: var(-White);
+	padding: 5px 0;
+	font-size: 1rem;
+}
+.Auth-input {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	align-content: center;
+	font-family: "Poppins";
+}
+.Auth-buttons {
+	display: grid;
+	padding: 2px;
+}
+.Auth-buttons > button {
+	margin: 5px 0;
+	padding: 5px;
+	font-family: "Poppins";
+	background-color: var(--Const-black);
+	color: var(--Const-white);
+	cursor: pointer;
+}
+.Auth-buttons > button:hover {
+	background-color: var(--Secondary);
+	color: var(--Const-black);
+}
+.Auth-linkTo:hover {
+	color: var(--Black);
+}
+.error-msg {
+	padding: 0;
+	margin: 0;
+	color: red;
+}

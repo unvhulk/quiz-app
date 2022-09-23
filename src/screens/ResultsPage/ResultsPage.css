@@ -1,0 +1,34 @@
+.Quiz-results {
+	display: grid;
+	min-height: 50vh;
+}
+.Results-screen {
+	display: grid;
+	overflow: auto;
+	height: 64vh;
+	grid-row: 2/3;
+	grid-column: 2/3;
+	background-color: var(--Secondary);
+	border-radius: 2rem;
+	color: var(--Text);
+	padding: 2rem 4rem;
+}
+.Results-screen::-webkit-scrollbar {
+	display: none;
+}
+.Results-options > div {
+	border: 1px solid var(--Const-black);
+	background-color: var(--Const-white);
+	border-radius: 0.5rem;
+	margin: 10px;
+	padding: 5px;
+	cursor: pointer;
+}
+.Results-info {
+	display: grid;
+	justify-content: center;
+	font-size: 1.5rem;
+	border-radius: 2rem;
+	background-color: var(--Black);
+	color: var(--White);
+}

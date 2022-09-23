@@ -1,0 +1,81 @@
+.Homepage-container {
+	display: grid;
+	grid-template-rows: 1fr 6fr;
+	grid-template-columns: 1fr 18fr 1fr;
+}
+.Heading-container {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	display: grid;
+	grid-template-columns: 5% 85% 10%;
+	align-self: center;
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--Primary);
+}
+
+.Heading-container > div {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.Heading-container > div:nth-child(2) {
+	display: grid;
+	justify-self: center;
+}
+.Heading-container > div:nth-child(3) {
+	display: grid;
+	justify-self: end;
+	margin-right: 1rem;
+}
+.Heading-container .Icon > svg {
+	font-size: 2.5rem;
+	cursor: pointer;
+}
+.Quiz-header {
+	cursor: pointer;
+}
+.Quiz-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-row: 2/3;
+	grid-column: 2/3;
+	background-color: var(--Secondary);
+	border-radius: 2rem 2rem 0 0;
+}
+.Quiz-box {
+	cursor: pointer;
+	display: grid;
+	grid-template-rows: 4fr 1fr;
+	background-color: var(--Primary-variant);
+	border-radius: 2rem;
+	justify-items: center;
+	margin: 8px;
+}
+
+.Quiz-box:hover {
+	transform: scale(1.05);
+}
+.Box-start {
+	display: grid;
+	align-content: center;
+	justify-items: center;
+	border-radius: 0 0 2rem 2rem;
+	background-color: var(--White);
+	color: var(--Primary-variant);
+	font-size: 1rem;
+	font-weight: 500;
+	width: 100%;
+}
+.Box-img {
+	display: grid;
+	justify-self: center;
+	align-self: center;
+}
+.Logout {
+	display: grid;
+	font-size: 1.5rem;
+	cursor: pointer;
+}

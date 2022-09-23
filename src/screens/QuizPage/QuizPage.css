@@ -1,0 +1,103 @@
+.Quiz-page {
+	display: grid;
+	grid-template-rows: 1fr 6fr 1fr;
+	grid-template-columns: 1fr 10fr 1fr;
+}
+.Quiz-heading {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--Primary);
+	grid-row: 1/2;
+	grid-column: 2/3;
+}
+
+.Quiz-screen {
+	display: grid;
+	grid-row: 2/3;
+	grid-column: 2/3;
+	background-color: var(--Secondary);
+	border-radius: 2rem;
+	grid-template-rows: 15% 15% 55% 15%;
+	color: var(--Text);
+	padding: 2rem 4rem;
+}
+.Question-detail {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.Question-no {
+	display: grid;
+}
+.Question-timer {
+	display: grid;
+	justify-items: end;
+}
+.Quiz-questions {
+	font-size: 1.5rem;
+}
+.Quiz-options {
+	font-size: 1.2rem;
+}
+.Quiz-options > div {
+	border: 1px solid var(--Const-black);
+	background-color: var(--Const-white);
+	border-radius: 0.5rem;
+	margin: 10px;
+	padding: 5px;
+	cursor: pointer;
+}
+.Quiz-options > div:hover {
+	background-color: var(--Const-black);
+	color: var(--Const-white);
+	box-shadow: 0 0 5px 2px var(--BOX-SHADOW);
+}
+.Quiz-buttons {
+	display: grid;
+	grid-template-columns: 15% 70% 15%;
+	grid-template-rows: 1fr;
+}
+.Quiz-buttons > div {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	border: 1px solid black;
+	margin: 2rem 1rem;
+	padding: 5px 1rem;
+	border-radius: 1rem;
+	cursor: pointer;
+}
+.Exit {
+	background-color: var(--White);
+	color: var(--Primary-variant);
+}
+.Exit:hover {
+	outline: 2px solid var(--Black);
+	color: var(--Black);
+	box-shadow: 0 0 5px 2px var(--BOX-SHADOW);
+}
+.Next:hover {
+	outline: 2px solid var(--Black);
+}
+.Next {
+	grid-column: 3/4;
+	color: var(--White);
+	background-color: var(--Primary-variant);
+}
+.Option.Active-option {
+	background-color: var(--Primary-variant);
+	color: var(--White);
+	box-shadow: 0 0 5px 2px var(--BOX-SHADOW);
+}
+.Option.Green-option {
+	background-color: var(--ALERT-SUCCESS-COLOR);
+	color: var(--Black);
+	box-shadow: 0 0 5px 2px var(--BOX-SHADOW);
+}
+.Option.Red-option {
+	background-color: var(--Error);
+	color: var(--Black);
+	box-shadow: 0 0 5px 2px var(--BOX-SHADOW);
+}

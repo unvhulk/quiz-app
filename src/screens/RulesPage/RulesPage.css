@@ -1,0 +1,61 @@
+.Rules-container {
+	display: grid;
+	grid-template-rows: 1fr 5fr 1fr;
+	grid-template-columns: 4fr 7fr 4fr;
+}
+.Rules-heading {
+	display: grid;
+	grid-column: 2/3;
+	justify-self: center;
+	align-self: center;
+	color: var(--Primary);
+	font-weight: 600;
+	font-size: 2rem;
+}
+.Quiz-rules {
+	display: grid;
+	grid-template-rows: 70% 30%;
+	background-color: var(--Secondary);
+	grid-row: 2/3;
+	grid-column: 2/3;
+	border-radius: 2rem;
+}
+.Rules-list {
+	display: grid;
+	justify-items: center;
+	font-size: 1.2rem;
+}
+.Rules-list > ul > li {
+	margin: 10px;
+}
+.Rules-buttons {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+	font-size: 1.2rem;
+}
+
+.Exit-button {
+	background-color: var(--White);
+	color: var(--Black);
+	padding: 10px 5rem;
+	margin: 10px;
+	border-radius: 2rem;
+	cursor: pointer;
+}
+.Exit-button:hover {
+	outline: 2px solid black;
+}
+.Continue-button {
+	background-color: var(--Black);
+	color: var(--White);
+	outline: 2px solid black;
+	padding: 10px 5rem;
+	margin: 10px;
+	cursor: pointer;
+	border-radius: 2rem;
+}
+.Continue-button:hover {
+	border: 1px solid black;
+}
