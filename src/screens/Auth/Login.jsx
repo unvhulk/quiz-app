@@ -6,7 +6,7 @@ import "./Auth.css";
 export function Login() {
 	const navigate = useNavigate();
 
-	const { guestLoginHandler, loginHandler } = useAuth();
+	const { guestLoginHandler, loginHandler, error } = useAuth();
 
 	const [user, setUser] = useState({
 		email: "",
@@ -29,6 +29,7 @@ export function Login() {
 			</div>
 			<form className='Auth-form' onSubmit={handleSubmit}>
 				<div className='Auth-heading'>Login</div>
+				<p className='error-msg'>{error?.response.data?.errors}</p>
 				<div className='Auth-input'>
 					<label className='Auth-label' htmlFor='email'>
 						Email address

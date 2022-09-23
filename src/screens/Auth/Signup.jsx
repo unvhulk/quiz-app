@@ -5,7 +5,7 @@ import "./Auth.css";
 
 export function Signup() {
 	const navigate = useNavigate();
-
+	const { error } = useAuth();
 	const [user, setUser] = useState({
 		email: "",
 		password: "",
@@ -58,6 +58,8 @@ export function Signup() {
 			</div>
 			<form className='Auth-form' onSubmit={handleSubmit}>
 				<div className='Auth-heading'>Signup</div>
+				<p className='error-msg'>{error?.response.data?.errors}</p>
+
 				<div className='Auth-input'>
 					<label className='Auth-label' htmlFor='email'>
 						Email address

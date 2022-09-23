@@ -16,8 +16,8 @@ const AuthProvider = ({ children }) => {
 	const [token, setToken] = useState("");
 
 	useEffect(() => {
-		error && console.error(error);
-	}, [error]);
+		setError(null);
+	}, [location.pathname]);
 
 	const loginHandler = async (email, password) => {
 		try {
