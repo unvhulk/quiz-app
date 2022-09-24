@@ -7,13 +7,14 @@ const useCategory = () => useContext(CategoryContext);
 const CategoryProvider = ({ children }) => {
 	const [categories, setCategories] = useState([]);
 
-	useEffect(
-		() => async () => {
+	useEffect(function outer() {
+		async function inner() {
+			console.log("In inner async");
 			const categoryData = await axios.get("api/categories");
 			setCategories(categoryData.data.categories);
-		},
-		[]
-	);
+		}
+		inner();
+	}, []);
 
 	return (
 		<CategoryContext.Provider value={{ categories }}>
