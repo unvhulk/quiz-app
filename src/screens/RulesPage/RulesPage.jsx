@@ -6,6 +6,7 @@ import "./RulesPage.css";
 export const RulesPage = () => {
 	const navigate = useNavigate();
 	const { QuitQuiz, categoryQuestionsRef } = useQuestion();
+	console.log(categoryQuestionsRef.current);
 	return (
 		<div className='Rules-container'>
 			<div className='Rules-heading'>Rules For Quiz</div>

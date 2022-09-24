@@ -9,7 +9,6 @@ const CategoryProvider = ({ children }) => {
 
 	useEffect(function outer() {
 		async function inner() {
-			console.log("In inner async");
 			const categoryData = await axios.get("api/categories");
 			setCategories(categoryData.data.categories);
 		}

@@ -31,13 +31,13 @@ function QuestionProvider({ children }) {
 	const curQueIndexRef = useRef(initialIndexValue);
 	const categoryQuestionsRef = useRef([]);
 
-	const getSelectedCategoryQuestions = (name, token) => {
+	const getSelectedCategoryQuestions = (name) => {
 		setCategory(name);
 		setScore(initialScore);
 		curQueIndexRef.current = initialIndexValue;
 		getData();
 		categoryQuestionsRef.current = questions.filter(
-			(question) => question.categoryName === name.toLowerCase()
+			(question) => question.categoryName.toLowerCase() === name.toLowerCase()
 		);
 		setSelectedOption([]);
 		navigate("/rules", { state: { from: location } });

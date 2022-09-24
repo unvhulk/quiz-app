@@ -41,7 +41,7 @@ export const Homepage = () => {
 								key={category._id}
 								className='Quiz-box'
 								onClick={() => {
-									getSelectedCategoryQuestions(category.name, token);
+									getSelectedCategoryQuestions(category.name);
 								}}>
 								<div className='Box-img'>
 									<img src={category.image} alt='' />
